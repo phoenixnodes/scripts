@@ -5,8 +5,7 @@ cd /srv
 echo "Is this a US or EU server? (us or eu)"
 read whatserver
 
-wget https://raw.githubusercontent.com/phoenixnodes/scripts/master/$whatserver-backup.sh -O "backup.sh"
-chmod a+x backup.sh
+wget https://raw.githubusercontent.com/phoenixnodes/scripts/master/$whatserver-backup.sh -O "backup.sh" && chmod a+x backup.sh
 
 #write out current crontab
 crontab -l > mycron
