@@ -23,4 +23,6 @@ rm -rf awscliv2.zip
 
 /usr/local/bin/aws configure
 
+/usr/local/bin/aws configure set default.s3.max_bandwidth 50MB/s
+
 echo "Done"
